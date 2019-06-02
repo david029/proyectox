@@ -1,0 +1,30 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">API-Motos</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Acerca de.. </a>
+      <a class="nav-item nav-link" href="#">API:</a>
+      <b class="nav-item nav-link" href="C:\Users\ortiz\proyectox_send\public\stylesheets\style.css">Ingeniería de Software, ICO FES Aragón</b>
+    </div>
+  </div>
+</nav>
+
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<h1>Insertar Moto: </h1>
+<form action="/api/users/" method="post">
+  <input type="text" name="id" >
+  <input type="text" name="name" >
+  <input type="text" name="mark" >
+  <input type="text" name="model" >
+  <input type="text" name="type" >
+  <input type="text" name="cost" >
+  
+  <input type="submit"  value="Guardar">
+</form>

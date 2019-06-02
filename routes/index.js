@@ -5,10 +5,13 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
-
-router.get('/hola', function(req, res, next) {
-	//solicitud de una ruta API REST
-  res.render('saludo', { otraCosa: 'cosa' });
+router.get('/acerca', function(req, res, next) {
+	//solicitud a una ruta del apirest
+  res.render('saludo', { otraCosa: 'Acerca' });
 });
+router.get('/api', function(req, res, next){
+	res.render('apirest', {title: 'API'});
+})
+
 
 module.exports = router;
